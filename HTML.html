@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="html.css">
+</head>
+<body>
+    <nav>
+        <h1>LEARN HTML</h1>
+        <img id="nightmode" onclick="nightmode()" src="img/brightness-and-contrast (1).png" alt="">
+        <img id="lightmode" onclick="lightmode()" src="img/idea (1).png" alt="">
+    </nav>
+
+    <!-- bootstrap components // ACCORDIONS -->
+    <main>
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              HTML5 Introduction
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">HTML5, or Hypertext Markup Language 5, is the latest and most widely used version of the HTML standard, which is the core language used to create and structure content on the World Wide Web. HTML5 was developed to enhance the capabilities of web pages and provide a more versatile and feature-rich platform for web developers and designers. It was officially released by the World Wide Web Consortium (W3C) in October 2014, and it has since become the foundation for building modern and interactive websites and web applications.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              HTML Elements
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+                HTML elements are building blocks of web pages. Each element is enclosed in angle brackets and consists of a start tag, content, and an end tag (if applicable). Elements define the structure and content of a web page. <br><br>
+                <mark>Heading (h1, h2, h3, etc.): Text that defines headings or titles of sections. <br><br>
+                Paragraph (p): Text grouped together as a single paragraph. <br><br>
+                Link (a): Creates hyperlinks to other web pages or resources. <br><br>
+                Image (img): Embeds images in web pages. <br><br>
+                List (ul, ol, li): Creates unordered or ordered lists with list items. <br><br>
+                Div (div): A container used for styling and layout purposes. <br><br>
+                Form (form): Encloses form controls like input fields and buttons.<br><br>
+                Input (input): Provides text boxes, checkboxes, radio buttons, and more for user input. <br><br>
+                Button (button): Creates clickable buttons.  <br><br>
+                Header (header): Represents introductory content at the top of a section.  <br><br>
+                Footer (footer): Represents closing content at the bottom of a section. <br><br>
+                Navigation (nav): Defines navigation links. <br><br>
+                Article (article): Contains self-contained content, like blog posts or articles. <br><br>
+                Section (section): Groups related content within a web page. <br><br>
+                Canvas (canvas): Provides a space for dynamic 2D graphics rendering. <br><br>
+                Video (video): Embeds video content. <br><br>
+                Audio (audio): Embeds audio content. <br><br>
+                Table (table): Creates tables for organizing data. <br><br>
+                List Item (li): Represents items in a list. <br><br>
+                Label (label): Provides a label for form elements. <br><br>
+                Select (select): Creates dropdown menus. <br><br>
+                Textarea (textarea): Offers multi-line text input. <br><br>
+                Span (span): Inline container for styling or scripting. <br><br>
+                Bold (b) and Italic (i): Apply text formatting. <br><br>
+                Horizontal Line (hr): Creates a horizontal line. </mark> <br><br>
+
+                These elements, when combined and structured properly, allow web developers to create rich and structured web pages with text, multimedia, forms, and interactive content. HTML elements are the foundation of web development and are essential for creating the web content we interact with daily.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              HTML Attributes
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+                HTML attributes provide additional information about HTML elements and are usually defined within the opening tag of an element. They are used to modify or enhance an element's behavior, appearance, or functionality. Here are some common HTML attributes explained using only words: <br><br>
+
+   <mark> Class (class): Assigns a CSS class to an element, allowing for styling and applying CSS rules. <br><br>
+
+    ID (id): Provides a unique identifier for an element, typically used for scripting or styling purposes. <br><br>
+
+    Src (src): Specifies the source URL for elements like images, audio, video, and iframes. <br><br>
+
+    Href (href): Defines the destination URL for links (anchor tags). <br><br>
+
+    Alt (alt): Provides alternative text for images, which is displayed if the image cannot be loaded or for accessibility. <br><br>
+ 
+    Width (width) and Height (height): Sets the dimensions of an element, such as images and canvas. <br><br>
+    
+    Value (value): Specifies the initial value for form elements like input fields and buttons. <br><br>
+    
+    Type (type): Determines the type of form element, such as text, password, checkbox, radio, etc. <br><br>
+    
+    Placeholder (placeholder): Displays a temporary hint or example text within an input field to guide user input. <br><br>
+    
+    Checked (checked): Preselects a checkbox or radio button when the page loads. <br><br>
+    
+    Disabled (disabled): Disables user interaction with an element, such as a button or form field. <br><br>
+    
+    Multiple (multiple): Allows selecting multiple options in a dropdown (select) element. <br><br>
+    
+    Required (required): Specifies that a form field must be filled out before submission. <br><br>
+    
+    Max (max) and Min (min): Sets maximum and minimum values for input fields, like date pickers and number inputs. <br><br>
+    
+    Autofocus (autofocus): Automatically gives focus to an input field when the page loads. <br><br>
+    
+    Target (target): Defines where a link should open, such as in a new tab or window (_blank). <br><br>
+    
+    Rowspan (rowspan) and Colspan (colspan): Specifies the number of rows or columns a table cell should span. <br><br>
+    
+    Role (role): Specifies the role of an element for accessibility purposes.<br><br>
+    
+    Aria- (aria-):** A set of attributes for accessibility, providing additional information about an element's role and state. <br><br>
+    
+    Contenteditable (contenteditable): Allows users to edit the content of an element, such as a div or a paragraph. <br><br>
+    
+    Media attributes (autoplay, loop, controls): Control the behavior of audio and video elements. <br><br>
+    
+    Rel (rel): Defines the relationship between a linked resource and the current document in links. <br><br>
+    
+    Data- (data-):** Custom data attributes used to store extra information about an element for JavaScript interactions. </mark> <br><br>
+    
+    These attributes, when used correctly, enhance the functionality, accessibility, and presentation of HTML elements, making web pages more interactive and user-friendly.
+          </div>
+        </div>
+      </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+            HTML Comments
+          </button>
+        </h2>
+        <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            HTML comments are non-visible text within the HTML code that provide information, notes, or explanations for developers. They do not appear on the rendered web page and are used for documentation and communication purposes. Here's an explanation of HTML comments using only words:
+
+            HTML comments are enclosed between markers.
+            
+            They allow developers to add notes, explanations, or reminders directly within the HTML code.
+            
+            Comments are ignored by web browsers, so they do not affect the appearance or functionality of the web page.
+            
+            Comments are useful for documenting code, explaining complex sections, or indicating where changes need to be made.
+            
+            They can also be used to temporarily remove or "comment out" portions of code for testing or debugging purposes.
+            
+            Comments are a helpful tool for collaboration among developers working on the same project.
+            
+            In summary, HTML comments are a way to include text in your HTML code that is not displayed on the web page but can provide valuable information for developers and improve code readability and maintenance.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseThree">
+            HTML Styles
+          </button>
+        </h2>
+        <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            HTML styles, also known as CSS (Cascading Style Sheets), are a set of rules and properties used to control the presentation and appearance of HTML elements on a web page. They define how elements should be styled, such as their colors, fonts, sizes, spacing, and positioning. Here's an explanation of HTML styles using only words:
+
+            Styles are applied to HTML elements to control their visual appearance.
+            
+            Styles are written in CSS (Cascading Style Sheets) and can be embedded in an HTML document or placed in separate external CSS files.
+            
+            CSS rules consist of selectors and declarations. Selectors specify which elements the styles should apply to, while declarations define the actual styles or properties for those elements.
+            
+            Common CSS properties include color, font-family, font-size, margin, padding, border, background-color, text-align, and more.
+            
+            Styles can be applied inline directly within an HTML element using the style attribute, within the HTML document's head using the style element, or externally by linking to a CSS file using the link element.
+            
+            CSS styles are cascading, meaning that multiple styles can be applied to the same element, and they follow a specific order of precedence to determine the final styling.
+            
+            Styles can be grouped into classes and IDs, allowing for consistent styling of multiple elements across a webpage.
+            
+            Classes and IDs are assigned to HTML elements using the class and id attributes, respectively.
+            
+            CSS styles can be responsive, adjusting the appearance of elements based on screen size and device type using media queries.
+            
+            Styles play a crucial role in enhancing the visual design, layout, and user experience of web pages.
+            
+            By separating content (HTML) from presentation (CSS), web developers can create flexible and aesthetically pleasing websites that adapt to different devices and screen sizes.
+            
+            In summary, HTML styles, managed through CSS, enable web developers to control how HTML elements are displayed, making it possible to create visually appealing and well-structured web pages.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+            HTML Forms
+          </button>
+        </h2>
+        <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+              html forms
+        </div>
+      </div>
+    </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

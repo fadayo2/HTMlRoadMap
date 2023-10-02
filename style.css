@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Chakra+Petch&family=Sofia+Sans+Condensed&family=Source+Code+Pro&display=swap');
+
+*,body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    transition: 0.5s;
+}
+
+nav {
+    width: 100vw;
+    height: 69px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav #lightmode {
+    display: none;
+}
+
+nav h1{
+    font-family: 'Source Code Pro', monospace;
+    width: 250px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.subject-button {
+    margin-top: 100px;
+    width: 100vw;
+    height: 150px;
+    display: grid;
+    align-items: center;
+    justify-content: space-around;
+}
+.subject-button button {
+    padding: 10px;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: bold;
+    color: white;
+}
+.subject-button .html {
+    background-color: rgb(182, 48, 0);
+}
+.subject-button .css {
+    background-color: rgb(10, 70, 97);
+}
+
+
+main {
+    margin-top: 50px;
+}
+main button {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 35px;
+}
+main div {
+    font-family: 'Caveat Brush', cursive;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 16px;
+}
