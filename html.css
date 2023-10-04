@@ -2,4 +2,13 @@
 
 nav h1 {
     font-family: 'Caveat Brush', cursive;
+    cursor: pointer;
 }
+main {
+    border: 1px dotted black;
+}
+main div {
+    background-color: rgb(3, 24, 34);
+    color: rgb(255, 0, 0);
+}
+

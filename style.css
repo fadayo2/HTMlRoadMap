@@ -21,6 +21,9 @@ nav {
 nav #lightmode {
     display: none;
 }
+nav img {
+    cursor: pointer;
+}
 
 nav h1{
     font-family: 'Source Code Pro', monospace;
@@ -50,6 +53,7 @@ nav h1{
     font-family: 'Chakra Petch', sans-serif;
     font-weight: bold;
     color: white;
+    cursor: pointer;
 }
 .subject-button .html {
     background-color: rgb(182, 48, 0);
@@ -67,7 +71,19 @@ main button {
     font-size: 35px;
 }
 main div {
-    font-family: 'Caveat Brush', cursive;
     font-family: 'Source Code Pro', monospace;
-    font-size: 16px;
+    font-size: 15px;
+}
+
+.note {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 20px;
+    font-family: 'Caveat Brush', cursive;
+}
+
+@media (min-width:768px) {
+    .note {
+        font-size: 30px;
+    }
 }

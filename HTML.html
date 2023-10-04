@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HTML</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="html.css">
 </head>
 <body>
     <nav>
-        <h1>LEARN HTML</h1>
+        <h1  onclick="changemode()">LEARN HTML</h1>
         <img id="nightmode" onclick="nightmode()" src="img/brightness-and-contrast (1).png" alt="">
         <img id="lightmode" onclick="lightmode()" src="img/idea (1).png" alt="">
     </nav>
@@ -197,11 +197,49 @@
         </h2>
         <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
           <div class="accordion-body">
-              html forms
+            HTML forms are a fundamental part of web pages that allow users to input and submit data to a website or application. They consist of various elements and attributes that facilitate user interaction and data collection. Here's an explanation of HTML forms using only words: <br><br>
+
+            Form Element (form): The element serves as a container for all form-related elements. It defines the boundary of the form and where the data will be sent upon submission. <br><br>
+                
+            Input Fields (input): Input fields like text boxes, checkboxes, radio buttons, and more are used to collect different types of user data.<br><br>
+            
+            Labels (label): Labels are used to provide descriptive text for input fields, improving accessibility and user experience.<br><br>
+            
+            Text Area (textarea): Textareas are larger input fields used for multiline text input, such as comments or messages.<br><br>
+            
+            Buttons (button): Buttons trigger actions like form submission or data validation. They can be of type "submit," "reset," or "button."<br><br>
+
+            Select Dropdown (select): Select elements create dropdown menus for users to choose from a list of options.<br><br>
+            
+            Options (option): Options define the individual choices within a select dropdown.<br><br>
+            
+            Checkboxes (input type="checkbox"): Checkboxes allow users to select multiple options from a list.<br><br>
+            
+            Radio Buttons (input type="radio"): Radio buttons are used when users can select only one option from a list.<br><br>
+            
+            File Upload (input type="file"): File upload fields enable users to upload files, such as images or documents.<br><br>
+            
+            Hidden Fields (input type="hidden"): Hidden fields store data on the form that is not displayed to the user but is sent when the form is submitted.<br><br>
+            
+            Submit (input type="submit") and Reset (input type="reset") Buttons: These buttons trigger form submission and reset the form, respectively.<br><br>
+            
+            Attributes (e.g., name, id, value): Input elements have various attributes like "name" and "id" that help identify and process the data entered by users.<br><br>
+            
+            Form Methods (GET and POST): Forms can use the GET or POST method to send data to the server. GET appends data to the URL, while POST sends it in the request body.<br><br>
+            
+            Form Action (action): The "action" attribute of the form specifies the URL to which the form data will be sent for processing.<br><br>
+            
+            Form Validation: JavaScript or HTML5 attributes like "required" and "pattern" can be used to validate user input before submission.<br><br>
+            
+            Fieldset and Legend (fieldset, legend): These elements group related input fields and provide a label or description for the group.<br><br>
+            
+            HTML forms are essential for user interaction on the web, enabling activities like user registration, login, search, data submission, and more. Web developers use various form elements and attributes to create interactive and user-friendly web applications.
         </div>
       </div>
     </div>
     </main>
+
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="main.js"></script>
 </body>

@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS.css">
+    <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.2/build/styles/{ THEME_NAME }.min.css"></link> -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.3.1/build/styles/default.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.3.1/build/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 </head>
 <body>
     <nav>
@@ -13,8 +19,610 @@
         <img id="lightmode" onclick="lightmode()" src="img/idea (1).png" alt="">
     </nav>
 
+    <main>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  CSS Intrduction
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    CSS, or Cascading Style Sheets, is a fundamental web technology used to control the visual appearance and layout of web pages. It works hand in hand with HTML, the markup language that structures content on the web. Here's an introductory explanation of CSS using only words for beginners: <br><br>
+
+   <mark> Styling Web Pages: CSS is used to style web pages, making them visually appealing, well-organized, and user-friendly. <br><br>
+
+    Separation of Concerns: CSS separates the presentation (how things look) from the content (what things are). This separation allows for easier maintenance and consistent styling across a website.<br><br>
+    
+    Selectors: CSS uses selectors to target HTML elements. You can select elements by their type (e.g., p for paragraphs), class (e.g., .header), or ID (e.g., #main-content).<br><br>
+    
+    Properties and Values: CSS rules consist of properties and values. Properties (e.g., color, font-size, margin) define what aspect of an element you want to style, and values (e.g., red, 16px, 10px 20px) specify how to style it.<br><br>
+    
+    Cascading: CSS rules can be applied from different sources (e.g., inline, internal, external stylesheets), and they cascade, meaning that the most specific rule takes precedence.<br><br>
+    
+    Classes and IDs: CSS classes (.class-name) and IDs (#id-name) are used to target specific elements for styling. Classes can be reused, while IDs must be unique on a page.<br><br>
+    
+    Selectors Hierarchy: CSS allows you to target elements based on their position within the HTML structure. For example, you can style all p elements within a div with a certain class.<br><br>
+    
+    Box Model: CSS treats each HTML element as a box with properties like width, height, margin, padding, and border. Understanding the box model is crucial for layout design.<br><br>
+    
+    Responsive Design: CSS enables the creation of responsive web designs that adapt to different screen sizes and devices using media queries.<br><br>
+
+    External Stylesheets: It's common practice to store CSS rules in external files and link them to HTML documents. This promotes reusability and separates styles from content.<br><br>
+    
+    Inheritance: CSS properties can be inherited from parent elements to their child elements, simplifying styling and ensuring consistency.<br><br>
+    
+    Pseudo-classes and Pseudo-elements: CSS provides selectors like :hover and ::before to style elements based on user interaction or create decorative elements.<br><br>
+    
+    Vendor Prefixes: Some CSS properties may require vendor-specific prefixes (e.g., -webkit-, -moz-) for compatibility with different browsers.<br><br>
+    
+    Frameworks and Libraries: There are CSS frameworks (e.g., Bootstrap) and libraries (e.g., FontAwesome) available to streamline styling and add pre-designed components to web projects.</mark>  <br><br> 
+    
+    In summary, CSS is a powerful tool for web designers and developers to control the look and layout of web pages. It offers flexibility, consistency, and the ability to create visually appealing and responsive websites. Learning CSS is a valuable skill for anyone interested in web development.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  CSS Syntax and Selectors
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    CSS Syntax: <br><br>
+
+                    Selectors: CSS selectors target HTML elements you want to style. They can be element names (e.g., p for paragraphs), classes (e.g., .header), IDs (e.g., #main-content), or other attributes (e.g., [type="button"]).<br><br>
+                    
+                    Declaration Block: After selecting an element, you enclose styling instructions within curly braces {}. This block is called a declaration block.<br><br>
+                    
+                    Properties: Inside the declaration block, you specify CSS properties (e.g., color, font-size) that define what aspect of the selected element you want to style.<br><br>
+                    
+                    Values: For each property, you assign a value (e.g., red, 16px) that determines how the selected element will be styled.<br><br>
+
+                    Declaration: The combination of a property and its value is called a declaration (e.g., color: red;). Multiple declarations can be placed within the declaration block.<br><br>
+                    
+                    Semicolon: A semicolon ; separates individual declarations within the declaration block.<br><br>
+                    
+                    Rule: A CSS rule consists of a selector and its associated declaration block (e.g., p { color: red; }). Rules define how selected HTML elements will appear on the web page.<br><br>
+                    
+                    CSS Selectors:<br><br>
+                    
+                    Element Selector: Targets HTML elements by their name (e.g., p selects all paragraphs).<br><br>
+                    
+                    Class Selector: Targets elements with a specific class attribute (e.g., .header selects all elements with class="header").<br><br>
+                    
+                    ID Selector: Targets a unique element by its ID attribute (e.g., #main-content selects the element with id="main-content").<br><br>
+                    
+                    Descendant Selector: Selects elements that are descendants of a specified parent element (e.g., ul li selects all li elements within a ul).<br><br>
+                    
+                    Child Selector: Selects elements that are direct children of a specified parent element (e.g., ul > li selects all li elements that are direct children of a ul).<br><br>
+                    
+                    Adjacent Sibling Selector: Targets an element that is immediately preceded by another element (e.g., h2 + p selects a p element that directly follows an h2).<br><br>
+                    
+                    Attribute Selector: Selects elements based on their attributes (e.g., [type="text"] selects input elements with type="text").<br><br>
+
+                    Pseudo-class Selector: Targets elements based on their state or position, such as :hover for elements when the mouse hovers over them.<br><br>
+                    
+                    Pseudo-element Selector: Selects parts of an element, like ::before and ::after to add content before or after an element.<br><br>
+                    
+                    Universal Selector: Targets all elements on a page (* selects all elements).<br><br>
+                    
+                    These selectors allow you to precisely pinpoint the HTML elements you want to style, making your web pages visually appealing and well-structured using CSS.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  CSS Inserting
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <ul>
+                    <li>Inline CSS:
+                      Inline CSS is applied directly to a single HTML element using the style attribute.</li>
+                  </ul>
+                    <pre>
+                      <code class="language-html">
+                        &lt;p style=&quot;color: blue; font-size: 16px;&quot;&gt;This is a blue, 16px text.&lt;/p&gt;
+                      </code>
+                    </pre>
+                    <ul>
+                      <li>Internal CSS:
+                        Internal CSS is placed within the &lt;style&gt; tag in the &lt;head&gt; section of your HTML document and applies styles to multiple elements on the same page.</li>
+                    </ul>
+                    <pre>
+                      <code class="language-html">
+                        &lt;head&gt;
+                        &lt;style&gt;
+                          p {
+                            color: red;
+                            font-size: 18px;
+                          }
+                        &lt;/style&gt;
+                      &lt;/head&gt;
+                      &lt;body&gt;
+                        &lt;p&gt;This is a red, 18px text.&lt;/p&gt;
+                        &lt;p&gt;Another red, 18px text.&lt;/p&gt;
+                      &lt;/body&gt;                      
+                      </code>
+                    </pre>
+                    <ul>
+                      <li>External CSS:
+                        External CSS is stored in a separate .css file and linked to your HTML document using the &lt;link&gt; element.</li>
+                    </ul>
+                    <pre>
+                      <code class="language-html">
+                        &lt;!-- In your HTML file (index.html) --&gt;
+                          &lt;head&gt;
+                            &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;styles.css&quot;&gt;
+                          &lt;/head&gt;
+                          &lt;body&gt;
+                         &lt;p class=&quot;blue-text&quot;&gt;This is a blue text.&lt;/p&gt;
+                         &lt;p class=&quot;blue-text&quot;&gt;Another blue text.&lt;/p&gt;
+                        &lt;/body&gt;
+                      </code>
+                    </pre>
+                    <pre>
+                      <code class="language-html">
+                        /* In your CSS file (styles.css) */
+                        .blue-text {
+                          color: blue;
+                          font-size: 16px;
+                        }
+                        </code>
+                    </pre>
+                    <div>In the above examples: <br>
+
+                      We use CSS properties like color (text color) and font-size (text size) to apply styles.
+                      We can target specific elements using element selectors (e.g., p for paragraphs) or class selectors (e.g., .blue-text).
+                      In external CSS, the CSS code is stored in a separate file (e.g., styles.css) and linked to the HTML file using the &lt;link&gt; element.
+                      Choose the method that best suits your needs and coding style. Each method has its advantages and use cases. Inline CSS is the simplest but is typically used for quick styling adjustments. Internal CSS is useful for small projects, while external CSS is great for larger websites to maintain a consistent style across multiple pages.
+                      </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    CSS Colors
+                  </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <ul><li>Color Names: CSS provides named colors that you can use directly in your styles. These names are easy to remember and use:</li></ul>
+                    <pre>
+                      <code class="language-html">
+                        color: red;
+                        background-color: blue;
+                        </code>
+                    </pre>
+                    <ul><li>Hexadecimal Colors: Hexadecimal values use a six-character code starting with "#" to represent colors.</li></ul>
+                    <pre>
+                      <code class="language-html">
+                        /* Example */
+                        color: #FF5733; /* This represents a shade of orange */
+                      </code>
+                    </pre>
+                    <ul><li>RGB Colors: RGB (Red, Green, Blue) values allow you to define colors by specifying the intensity of each color component.</li></ul>
+                    <pre>
+                      <code class="language-html">
+                        /* Example */
+                        color: rgb(255, 0, 0); /* This is pure red */
+                      </code>
+                    </pre>
+                    <ul><li>RGBA Colors: RGBA is similar to RGB but includes an additional alpha component for transparency.</li></ul>
+                    <pre>
+                      <code class="language-html">
+                        /* Example */
+                        color: rgba(0, 128, 0, 0.5); /* This is semi-transparent green */
+                      </code>
+                    </pre>
+                    <ul><li>HSL Colors: HSL (Hue, Saturation, Lightness) values define colors based on their hue, saturation, and lightness.</li></ul>
+                    <pre>
+                      <code>
+                        /* Example */
+                        color: hsl(210, 100%, 50%); /* This is a vibrant shade of blue */
+                      </code>
+                    </pre>
+                    <ul><li>HSLA Colors: HSLA is similar to HSL but includes an alpha component for transparency.</li></ul>
+                    <pre>
+                      <code class="language-html">
+                        /* Example */
+                        color: hsla(60, 100%, 50%, 0.7); /* This is a semi-transparent yellow */
+                      </code>
+                    </pre>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                    CSS Backgrounds
+                  </button>
+                </h2>
+                <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <ul><li>Background Color: You can set the background color of an element using the background-color property.</li></ul>
+                    <pre>
+                      <code class="language-html">
+                        /* Example */
+                        background-color: lightblue;
+
+                        /* This will set the background color of the element to light blue. */
+                      </code>
+                    </pre>
+                    <ul><li>Background Image: You can set a background image using the background-image property.</li></ul>
+                    <pre>
+                      <code class="language-html">
+                        /* Example */
+                        background-image: url('background-image.jpg');
+
+                        /* This will make the background image cover the entire element. */
+                      </code>
+                    </pre>
+                    <ul><li>Background Repeat: You can control how the background image repeats using the background-repeat property.</li></ul>
+                    <pre>
+                      <code class="language-html">
+                        /* Example */
+                        background-repeat: no-repeat;
+                      </code>
+                    </pre>
+                    <ul><li>Background Position: You can set the position of the background image using the background-position property.</li></ul>
+                    <pre>
+                      <code class="language-html">
+                        /* Example */
+                        background-position: center top;
+                        /* This will position the background image in the center horizontally and at the top vertically. */
+                      </code>
+                    </pre>
+                    <ul><li>Multiple Backgrounds: You can use multiple background images on a single element.</li></ul>
+                    <pre>
+                      <code class="language-html">
+                        /* Example */
+                        background-image: url('bg1.jpg'), url('bg2.jpg');
+                        background-position: left top, right bottom;
+                        background-repeat: no-repeat, repeat-x;
+
+                        /* This sets two background images with different positions and repeat behaviors. */
+                        </code>
+                    </pre>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                    CSS Border
+                  </button>
+                </h2>
+                <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <ul><li>Border Width: You can set the width of the border using the border-width property. It can be specified in pixels, ems, or other units.</li></ul>
+                    <pre>
+                      <code class="language-html">
+                        /* Example */
+                        border-width: 2px;
+                        </code>
+                    </pre>
+                    <ul><li>Border Style: You can define the style of the border using the border-style property. Common styles include solid, dotted, dashed, double, and more.</li></ul>
+                    <pre>
+                      <code class="language-html">
+                        /* Example */
+                        border-style: solid;
+                        </code>
+                    </pre>
+                    <ul><li>Border Color: You can specify the color of the border using the border-color property.</li></ul>
+                    <pre>
+                      <code class="language-html">
+                        /* Example */
+                        border-color: red;
+                        </code>
+                    </pre>
+                    <ul><li>Shorthand border Property: You can combine all the border properties into a single border property for convenience.</li></ul>
+                    <pre>
+                      <code class="language-html">
+                        /* Example */
+                        border: 2px solid red;
+                        </code>
+                    </pre>
+                    <ul><li>Rounded Corners: You can create rounded borders using the border-radius property.</li></ul>
+                    <pre>
+                      <code class="language-html">
+                        /* Example */
+                        border-radius: 10px;
+                        </code>
+                    </pre>
+                    <ul><li>Border on Specific Sides: You can apply borders to specific sides of an element (e.g., top, right, bottom, left) using properties like border-top, border-right, border-bottom, and border-left.</li></ul>
+                    <pre>
+                      <code class="language-html">
+                        /* Example */
+                        border-top: 2px dashed blue;
+                        </code>
+                    </pre>
+
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                    CSS Margin
+                  </button>
+                </h2>
+                <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <ul><li>Margin Property: The margin property allows you to control the margin space on all sides (top, right, bottom, and left) of an element.</li></ul>
+                    <pre>
+                      <code class="language-html">
+                        /* Example */
+                        margin: 10px; /* Adds a 10-pixel margin on all sides */
+                        </code>
+                    </pre>
+                    <ul><li>Margin on Specific Sides: You can specify margins for individual sides using properties like margin-top, margin-right, margin-bottom, and margin-left.</li></ul>
+                    <pre>
+                      <code class="language-html">
+                        /* Example */
+                        margin-top: 20px; /* Adds a 20-pixel margin only on the top side */
+                        margin-bottom: 30px; /* Adds a 30-pixel margin only on the bottom side */
+                        </code>
+                    </pre>
+                    <ul><li>Shorthand Margin: You can use the shorthand margin property to set margins for all sides simultaneously or specify individual values for specific sides.</li></ul>
+                    <pre>
+                      <code class="language-html">
+                        /* Example */
+                        margin: 10px 20px 10px 30px; /* Top, Right, Bottom, Left */
+                        </code>
+                    </pre>
+                    <ul><li>Auto Margin: You can use the margin property to center block-level elements horizontally by setting the left and right margins to auto.</li></ul>
+                    <pre>
+                      <code class="language-html">
+                        /* Example */
+                        margin: auto; /* Center the element horizontally */
+                        </code>
+                    </pre>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+                    CSS Padding
+                  </button>
+                </h2>
+                <div id="flush-collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <ul><li>Padding Property: The padding property allows you to control the padding space on all sides (top, right, bottom, and left) of an element.</li></ul>
+                    <pre>
+                      <code class="language-html">
+                        /* Example */
+                        padding: 10px; /* Adds a 10-pixel padding on all sides */
+                        </code>
+                    </pre> 
+                    <ul><li>Padding on Specific Sides: You can specify padding for individual sides using properties like padding-top, padding-right, padding-bottom, and padding-left.</li></ul>
+                    <pre>
+                      <code class="language-html">
+                        /* Example */
+                        padding-top: 20px; /* Adds a 20-pixel padding only on the top side */
+                        padding-bottom: 30px; /* Adds a 30-pixel padding only on the bottom side */
+                        </code>
+                    </pre>
+                    <ul><li>Shorthand Padding: You can use the shorthand padding property to set padding for all sides simultaneously or specify individual values for specific sides.</li></ul>
+                    <pre>
+                      <code class="language-html">
+                        /* Example */
+                        padding: 10px 20px 10px 30px; /* Top, Right, Bottom, Left */
+                        </code>
+                    </pre>
 
 
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
+                    CSS Box model
+                  </button>
+                </h2>
+                <div id="flush-collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    The CSS box model is a fundamental concept that defines how elements are structured and spaced within a webpage. <br><br> It consists of four main parts: <br>
+                    1. Content: This is the innermost part of an element and contains the actual content, such as text or images. <br>
+                    2. Padding: The padding is the space between the content and the element's border. It provides an internal buffer zone to separate the content from the border. <br>
+                    3. Border: The border is a line that surrounds the padding and content, creating a visible boundary for the element. <br>
+                    4. Margin: The margin is the space outside the border, providing separation between this element and neighboring elements on the page. <br><br>
+                    In summary, the CSS box model helps control the layout and spacing of elements on a webpage by defining the content area, adding internal padding, creating a visible border, and specifying external margins. This model is crucial for understanding how elements interact and how spacing is managed in web design.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen">
+                    CSS Text
+                  </button>
+                </h2>
+                <div id="flush-collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">CSS (Cascading Style Sheets) for text allows you to control the appearance and layout of text on a web page. <br> You can adjust various aspects of text, including: <br>
+
+                    1. Font Properties: You can change the font family, size, weight (boldness), style (italic or normal), and color of text. <br>
+                    
+                    2. Text Alignment: You can align text to the left, right, center, or justify it to spread evenly across a line. <br>
+                    
+                    3. Text Decoration: You can add underlines, overlines, or line-throughs to text, as well as control the style of these decorations. <br>
+                    
+                    4. Line Spacing: You can adjust the spacing between lines of text, known as line height. <br>
+                    
+                    5. Text Indentation: You can set the indentation of the first line of text in a paragraph. <br>
+                    
+                    6. Text Transform: You can change the case of text to uppercase, lowercase, or capitalize the first letter of each word. <br>
+                    
+                    7. Text Shadow: You can add a shadow behind text to make it stand out from the background. <br>
+                    
+                    8. Letter Spacing: You can control the space between individual letters (character spacing). <br>
+                    
+                    9. Word Spacing: You can adjust the space between words. <br>
+                    
+                    10. Text Overflow: You can specify how text behaves when it overflows its containing element, like hiding it or adding ellipsis (...) to indicate hidden content. <br><br>
+                    
+                    CSS text properties give you the power to style text in various ways, making it more visually appealing and suitable for your webpage's design. <br><br>
+                    <h3 style="font-family: 'Caveat Brush', cursive;">Here's a simple code example to demonstrate it:</h3>
+                    <pre>
+                      <code class="language-html">
+                        /* CSS Text Properties Example */
+
+                        /* Text Color */
+                        .color-example {
+                          color: blue;
+                        }
+                        
+                        /* Text Alignment */
+                        .text-align-example {
+                          text-align: center;
+                        }
+                        
+                        /* Text Decoration (Underline) */
+                        .text-decoration-example {
+                          text-decoration: underline;
+                        }
+                        
+                        /* Text Transform (Uppercase) */
+                        .text-transform-example {
+                          text-transform: uppercase;
+                        }
+                        
+                        /* Text Indentation */
+                        .text-indent-example {
+                          text-indent: 20px;
+                        }
+                        
+                        /* Letter Spacing */
+                        .letter-spacing-example {
+                          letter-spacing: 2px;
+                        }
+                        
+                        /* Line Height */
+                        .line-height-example {
+                          line-height: 1.5;
+                        }
+                        
+                        /* Text Shadow */
+                        .text-shadow-example {
+                          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+                        }
+                        
+                        /* Text Overflow */
+                        .text-overflow-example {
+                          white-space: nowrap;
+                          overflow: hidden;
+                          text-overflow: ellipsis;
+                        }
+                        
+                        /* Word Spacing */
+                        .word-spacing-example {
+                          word-spacing: 5px;
+                        }
+                        </code>
+                    </pre>
+                  
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEleven" aria-expanded="false" aria-controls="flush-collapseEleven">
+                    CSS Display
+                  </button>
+                </h2>
+                <div id="flush-collapseEleven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                   <h3 style="font-family: 'Caveat Brush', cursive;">display: block; : </h3>
+                    Elements with display: block; take up the full width available, and each one appears on a new line, stacking vertically. They typically start on a new line and expand to the full width of their parent container.
+                    <pre>
+                      <code class="language-html">
+                        /* Example */
+                        div {
+                          display: block;
+                        }
+                        </code>
+                    </pre>
+
+                    <h3 style="font-family: 'Caveat Brush', cursive;">display: inline; : </h3>
+                    Elements with display: inline; do not start on a new line and only occupy as much width as necessary. They appear inline with other elements, side by side.
+                    <pre>
+                      <code class="language-html">
+                        /* Example */
+                        span {
+                          display: inline;
+                        }
+                      </code>
+                    </pre>
+
+                    <h3 style="font-family: 'Caveat Brush', cursive;">display: inline-block; : </h3>
+                    Elements with display: inline-block; are similar to inline elements but can have width, height, margin, and padding properties applied. They appear inline, yet you can control their size and spacing.
+                    <pre>
+                      <code class="language-html">
+                        /* Example */
+                        button {
+                          display: inline-block;
+                        }
+                      </code>
+                    </pre>
+
+                    <h3 style="font-family: 'Caveat Brush', cursive;">display: none; : </h3>
+                    Elements with display: none; are completely hidden from view. They do not occupy any space on the page and are not rendered.
+                    <pre>
+                      <code class="language-html">
+                        /* Example */
+                        .hidden-element {
+                          display: none;
+                        }
+                      </code>
+                    </pre>
+
+                    <h3 style="font-family: 'Caveat Brush', cursive;">display: flex; : </h3>
+                    Elements with display: flex; become flexible containers that can organize their child elements in rows or columns. It's used for building flexible and responsive layouts.
+                    <pre>
+                      <code class="language-html">
+                        /* Example */
+                        .flex-container {
+                          display: flex;
+                        }
+                      </code>
+                    </pre>
+
+                    <h3 style="font-family: 'Caveat Brush', cursive;">display: grid; : </h3>
+                    Elements with display: grid; create grid containers that can arrange child elements in rows and columns. It's used for creating complex grid-based layouts.
+                    <pre>
+                      <code class="language-html">
+                        /* Example */
+                        .grid-container {
+                          display: grid;
+                        }
+                      </code>
+                    </pre>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEleven" aria-expanded="false" aria-controls="flush-collapseEleven">
+                    CSS Inserting
+                  </button>
+                </h2>
+                <div id="flush-collapseEleven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                </div>
+              </div>
+          </div>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="main.js"></script>
 </body>
 </html>

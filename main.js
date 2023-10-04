@@ -19,3 +19,7 @@ const html = () =>{
 const css = () =>{
     window.location.href = 'CSS.html'
 }
+
+const changemode = () => {
+    window.location.href = 'https://www.w3schools.com/tags/default.asp'
+}
