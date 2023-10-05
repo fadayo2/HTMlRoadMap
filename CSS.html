@@ -610,14 +610,152 @@
               </div>
               <div class="accordion-item">
                 <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEleven" aria-expanded="false" aria-controls="flush-collapseEleven">
-                    CSS Inserting
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwelve" aria-expanded="false" aria-controls="flush-collapseTwelve">
+                    CSS Position
                   </button>
                 </h2>
-                <div id="flush-collapseEleven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                <div id="flush-collapseTwelve" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <div style="font-family: 'Caveat Brush', cursive; font-size: 20px;">CSS positioning is a way to control the placement and layout of elements (like text, images, and other HTML elements) on a web page. There are several positioning properties in CSS, but I'll explain the basics: static, relative, absolute, and fixed.</div> <br>
+                    <ul><li>
+                      Static Positioning:
+                      This is the default positioning for all HTML elements. When an element is positioned statically, it's placed in the normal flow of the document, and you can't really control its position using the top, bottom, left, or right properties.</li></ul>
+                      <pre>
+                        <code class="language-html">
+                        .static-box {
+                          position: static;
+                        }
+                        </code>
+                      </pre>
+                      <ul><li>
+                        Relative Positioning:
+                        When you set an element's position to relative, you can then use the top, bottom, left, or right properties to move the element relative to its normal position in the document flow.</li></ul>
+                        <pre>
+                          <code class="language-html">
+                          .relative-box {
+                            position: relative;
+                            top: 20px;
+                            left: 30px;
+                          }
+                          </code>
+                        </pre>
+                        <ul><li>
+                          Absolute Positioning:
+                          Elements with position: absolute are removed from the normal document flow, and their position is determined relative to the nearest parent element with a non-static position. If no such parent exists, it's positioned relative to the initial containing block (usually the viewport).</li></ul>
+                          <pre>
+                            <code class="language-html">
+                            .absolute-box {
+                              position: absolute;
+                              top: 50px;
+                              left: 100px;
+                            }
+                            </code>
+                          </pre>
+                          <ul><li>
+                            Fixed Positioning:
+                            Elements with position: fixed are also removed from the normal document flow, but they are positioned relative to the viewport, which means they stay in the same position even if you scroll the page.</li></ul>
+                            <pre>
+                              <code class="language-html">
+                              .fixed-box {
+                                position: fixed;
+                                top: 10px;
+                                right: 10px;
+                              }
+                              </code>
+                            </pre>
+                          <ul><li>The position: sticky; property in CSS is a positioning value that combines elements of both <mark>position: relative; and position: fixed; </mark>. It's particularly useful for creating elements that stick to a specific position on the screen as you scroll down a web page, and then "unsticks" when it reaches a defined scroll position. This behavior is often used for headers, sidebars, or navigation menus to provide a better user experience.</li></ul>
+                          <pre>
+                            <code class="language-html">
+                            .sticky-header {
+                              position: sticky;
+                              top: 0; /* Stick to the top of the viewport */
+                              background-color: #f0f0f0;
+                            }
+                            </code>
+                          </pre>
+                  </div>
                 </div>
               </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThirteen" aria-expanded="false" aria-controls="flush-collapseThirteen">
+                    CSS Overflow
+                  </button>
+                </h2>
+                <div id="flush-collapseThirteen" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <div style="font-family: 'Caveat Brush', cursive; font-size: 20px;"> In CSS, the overflow property is used to control what happens when the content of an element overflows its container. It specifies whether to show scrollbars, hide the overflow, or clip it.</div><br>
+                    <p style="font-family: 'Sofia Sans Condensed', sans-serif; font-size: 20px;">Here are the basic values for the overflow property:</p>
+                    <ul>
+                      <li>overflow: visible;: This is the default value. It allows content to overflow the container without any scrollbars. The overflow is visible, and it may extend beyond the container's boundaries.</li>
+                      <li>overflow: hidden;: This value hides any content that overflows the container. It's as if the overflowed content is clipped and not visible.</li>
+                      <li>overflow: scroll;: This value adds scrollbars to the container, whether the content overflows or not. If the content doesn't overflow, the scrollbars will be disabled. Users can scroll to see the hidden content.</li>
+                      <li>overflow: auto;: This value is similar to scroll, but it only adds scrollbars when the content overflows. If there's no overflow, it won't display scrollbars.</li>
+                    </ul> <br>
+                    <p style="font-family: 'Sofia Sans Condensed', sans-serif; font-size: 20px;">Here's an example to demonstrate these overflow values:</p>
+                    <pre>
+                      <code class="language-html">
+                        &lt;!DOCTYPE html&gt;
+                        &lt;html&gt;
+                        &lt;head&gt;
+                          &lt;style&gt;
+                            .container {
+                              width: 200px;
+                              height: 150px;
+                              border: 1px solid #ccc;
+                              margin: 20px;
+                            }
+                        
+                            .overflow-visible {
+                              overflow: visible;
+                            }
+                        
+                            .overflow-hidden {
+                              overflow: hidden;
+                            }
+                        
+                            .overflow-scroll {
+                              overflow: scroll;
+                            }
+                        
+                            .overflow-auto {
+                              overflow: auto;
+                            }
+                          &lt;/style&gt;
+                        &lt;/head&gt;
+                        &lt;body&gt;
+                          &lt;div class=&quot;container overflow-visible&quot;&gt;
+                            &lt;p&gt;This is some text that overflows the container. You won't see any scrollbars.&lt;/p&gt;
+                          &lt;/div&gt;
+                        
+                          &lt;div class=&quot;container overflow-hidden&quot;&gt;
+                            &lt;p&gt;This is some text that overflows the container, but it's hidden, so you can't see it.&lt;/p&gt;
+                          &lt;/div&gt;
+                        
+                          &lt;div class=&quot;container overflow-scroll&quot;&gt;
+                            &lt;p&gt;This is some text that overflows the container. Scrollbars will appear for scrolling.&lt;/p&gt;
+                          &lt;/div&gt;
+                        
+                          &lt;div class=&quot;container overflow-auto&quot;&gt;
+                            &lt;p&gt;This is some text that overflows the container. Scrollbars will appear only when needed.&lt;/p&gt;
+                          &lt;/div&gt;
+                        &lt;/body&gt;
+                        &lt;/html&gt;
+                        </code>
+                    </pre>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFourteen" aria-expanded="false" aria-controls="flush-collapseFourteen">
+                    CSS Overflow
+                  </button>
+                </h2>
+                <div id="flush-collapseFourteen" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                </div>
+              </div> -->
           </div>
     </main>
 
