@@ -27,7 +27,7 @@ nav img {
 
 nav h1{
     font-family: 'Source Code Pro', monospace;
-    width: 250px;
+    width: 350px;
     text-align: center;
     margin-top: 10px;
 }
@@ -35,7 +35,7 @@ nav h1{
 .subject-button {
     margin-top: 100px;
     width: 100vw;
-    height: 150px;
+    height: 200px;
     display: grid;
     align-items: center;
     justify-content: space-around;
@@ -60,6 +60,11 @@ nav h1{
 }
 .subject-button .css {
     background-color: rgb(10, 70, 97);
+}
+
+.subject-button .js {
+    background-color: rgb(255, 255, 255);
+    color: black;
 }
 
 

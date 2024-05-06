@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="CSS.css">
-    <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.2/build/styles/{ THEME_NAME }.min.css"></link> -->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.3.1/build/styles/default.min.css">
     <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.3.1/build/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS.css">
 </head>
 <body>
+    
     <nav>
-        <h1>LEARN CSS</h1>
+        <h1>LEARN JAVASCRIPT</h1>
         <img id="nightmode" onclick="nightmode()" src="img/brightness-and-contrast (1).png" alt="">
         <img id="lightmode" onclick="lightmode()" src="img/idea (1).png" alt="">
     </nav>
@@ -24,276 +24,159 @@
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                  CSS Intrduction
+                Intrduction to JAVASCRIPT
                 </button>
               </h2>
               <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                 <div class="accordion-body">
-                    CSS, or Cascading Style Sheets, is a fundamental web technology used to control the visual appearance and layout of web pages. It works hand in hand with HTML, the markup language that structures content on the web. Here's an introductory explanation of CSS using only words for beginners: <br><br>
+                    JavaScript is a high-level, interpreted programming language that is widely used for building interactive websites and web applications. It was created by Brendan Eich while he was working at Netscape Communications Corporation in 1995 and was initially named "LiveScript" before being renamed JavaScript. <br><br>
+                    <h1>Key Features:</h1> <br>
 
-   <mark> Styling Web Pages: CSS is used to style web pages, making them visually appealing, well-organized, and user-friendly. <br><br>
+                    <ol>
+                        <li><b>Client-Side Scripting: </b>JavaScript is primarily used for client-side scripting, meaning it runs in the user's web browser rather than on a web server. This allows for dynamic and interactive web content.
+                          <li><b>Versatility:</b> JavaScript is a versatile language that can be used for a variety of tasks, including creating web applications, building server-side applications using Node.js, and even developing mobile applications using frameworks like React Native. </li>
+                            <li><b>Object-Oriented:</b> JavaScript is an object-oriented language, which means it uses objects to model real-world entities. Objects in JavaScript can have properties and methods that allow for abstraction and encapsulation.</li>
+                            <li><b>Event-Driven:</b> JavaScript is inherently event-driven, meaning it can respond to user actions such as mouse clicks, keyboard inputs, and form submissions. This makes it ideal for creating interactive user interfaces.</li>
+                    </ol>
 
-    Separation of Concerns: CSS separates the presentation (how things look) from the content (what things are). This separation allows for easier maintenance and consistent styling across a website.<br><br>
-    
-    Selectors: CSS uses selectors to target HTML elements. You can select elements by their type (e.g., p for paragraphs), class (e.g., .header), or ID (e.g., #main-content).<br><br>
-    
-    Properties and Values: CSS rules consist of properties and values. Properties (e.g., color, font-size, margin) define what aspect of an element you want to style, and values (e.g., red, 16px, 10px 20px) specify how to style it.<br><br>
-    
-    Cascading: CSS rules can be applied from different sources (e.g., inline, internal, external stylesheets), and they cascade, meaning that the most specific rule takes precedence.<br><br>
-    
-    Classes and IDs: CSS classes (.class-name) and IDs (#id-name) are used to target specific elements for styling. Classes can be reused, while IDs must be unique on a page.<br><br>
-    
-    Selectors Hierarchy: CSS allows you to target elements based on their position within the HTML structure. For example, you can style all p elements within a div with a certain class.<br><br>
-    
-    Box Model: CSS treats each HTML element as a box with properties like width, height, margin, padding, and border. Understanding the box model is crucial for layout design.<br><br>
-    
-    Responsive Design: CSS enables the creation of responsive web designs that adapt to different screen sizes and devices using media queries.<br><br>
-
-    External Stylesheets: It's common practice to store CSS rules in external files and link them to HTML documents. This promotes reusability and separates styles from content.<br><br>
-    
-    Inheritance: CSS properties can be inherited from parent elements to their child elements, simplifying styling and ensuring consistency.<br><br>
-    
-    Pseudo-classes and Pseudo-elements: CSS provides selectors like :hover and ::before to style elements based on user interaction or create decorative elements.<br><br>
-    
-    Vendor Prefixes: Some CSS properties may require vendor-specific prefixes (e.g., -webkit-, -moz-) for compatibility with different browsers.<br><br>
-    
-    Frameworks and Libraries: There are CSS frameworks (e.g., Bootstrap) and libraries (e.g., FontAwesome) available to streamline styling and add pre-designed components to web projects.</mark>  <br><br> 
-    
-    In summary, CSS is a powerful tool for web designers and developers to control the look and layout of web pages. It offers flexibility, consistency, and the ability to create visually appealing and responsive websites. Learning CSS is a valuable skill for anyone interested in web development.
                 </div>
               </div>
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                  CSS Syntax and Selectors
+                  JAVASCRIPT Sytax
                 </button>
               </h2>
               <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                 <div class="accordion-body">
-                    CSS Syntax: <br><br>
+                    JavaScript syntax refers to the rules and conventions that govern the structure and organization of JavaScript code. Understanding JavaScript syntax is essential for writing clean, readable, and error-free code. In this guide, we'll cover the basic syntax elements of JavaScript. <br><br>
 
-                    Selectors: CSS selectors target HTML elements you want to style. They can be element names (e.g., p for paragraphs), classes (e.g., .header), IDs (e.g., #main-content), or other attributes (e.g., [type="button"]).<br><br>
+                    Statements
+                    JavaScript code consists of one or more statements. Each statement performs a specific action and ends with a semicolon (;).<br><br>
                     
-                    Declaration Block: After selecting an element, you enclose styling instructions within curly braces {}. This block is called a declaration block.<br><br>
+                    Variables are used to store data values. In JavaScript, variables are declared using the var, let, or const keywords.<br><br>
                     
-                    Properties: Inside the declaration block, you specify CSS properties (e.g., color, font-size) that define what aspect of the selected element you want to style.<br><br>
+                    Single-line comments: denoted by //. Anything after // on the same line is considered a comment.<br><br>
                     
-                    Values: For each property, you assign a value (e.g., red, 16px) that determines how the selected element will be styled.<br><br>
+                    Data Types
+                    JavaScript supports several data types, including:
+                    
+                    Primitive data types: such as numbers, strings, booleans, null, undefined, and symbols.
+                    Complex data types: such as objects and arrays.<br><br>
 
-                    Declaration: The combination of a property and its value is called a declaration (e.g., color: red;). Multiple declarations can be placed within the declaration block.<br><br>
-                    
-                    Semicolon: A semicolon ; separates individual declarations within the declaration block.<br><br>
-                    
-                    Rule: A CSS rule consists of a selector and its associated declaration block (e.g., p { color: red; }). Rules define how selected HTML elements will appear on the web page.<br><br>
-                    
-                    CSS Selectors:<br><br>
-                    
-                    Element Selector: Targets HTML elements by their name (e.g., p selects all paragraphs).<br><br>
-                    
-                    Class Selector: Targets elements with a specific class attribute (e.g., .header selects all elements with class="header").<br><br>
-                    
-                    ID Selector: Targets a unique element by its ID attribute (e.g., #main-content selects the element with id="main-content").<br><br>
-                    
-                    Descendant Selector: Selects elements that are descendants of a specified parent element (e.g., ul li selects all li elements within a ul).<br><br>
-                    
-                    Child Selector: Selects elements that are direct children of a specified parent element (e.g., ul > li selects all li elements that are direct children of a ul).<br><br>
-                    
-                    Adjacent Sibling Selector: Targets an element that is immediately preceded by another element (e.g., h2 + p selects a p element that directly follows an h2).<br><br>
-                    
-                    Attribute Selector: Selects elements based on their attributes (e.g., [type="text"] selects input elements with type="text").<br><br>
-
-                    Pseudo-class Selector: Targets elements based on their state or position, such as :hover for elements when the mouse hovers over them.<br><br>
-                    
-                    Pseudo-element Selector: Selects parts of an element, like ::before and ::after to add content before or after an element.<br><br>
-                    
-                    Universal Selector: Targets all elements on a page (* selects all elements).<br><br>
-                    
-                    These selectors allow you to precisely pinpoint the HTML elements you want to style, making your web pages visually appealing and well-structured using CSS.
+                    Functions are reusable blocks of code that perform a specific task. They are declared using the function keyword, followed by a name and a block of code enclosed in curly braces {}.<br><br>
                 </div>
               </div>
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                  CSS Inserting
+                  Datatypes in JAVASCRIPT
                 </button>
               </h2>
               <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                 <div class="accordion-body">
-                  <ul>
-                    <li>Inline CSS:
-                      Inline CSS is applied directly to a single HTML element using the style attribute.</li>
+                    JavaScript, as a versatile programming language, supports various data types essential for performing different tasks within a program. These data types can be broadly categorized into two main groups: primitive data types and complex data types. <br><br>
+                       <b> Primitive Data Types:</b>
+                    <ul>
+                      <li>Number: Used to represent numeric data, both integers and floating-point numbers. Numbers are used extensively in mathematical operations and calculations.</li>
+                      <li>String: Represents textual data enclosed within single (' ') or double (" ") quotes. Strings are fundamental for handling and manipulating textual information in JavaScript programs.</li>
+                      <li>Boolean: Represents a logical value indicating true or false. Booleans are often used in conditional statements and logical operations to control the flow of a program.</li>
+                      <li>Null: Represents the intentional absence of any object value. It is often used to explicitly indicate that a variable has no assigned value or that an object does not exist.</li>
+                      <li>Undefined: Represents a variable that has been declared but not assigned a value. When a variable is declared but not initialized, its value is undefined by default.</li>
                   </ul>
-                    <pre>
-                      <code class="language-html">
-                        &lt;p style=&quot;color: blue; font-size: 16px;&quot;&gt;This is a blue, 16px text.&lt;/p&gt;
-                      </code>
-                    </pre>
+                    <b>Complex Data Types</b>
                     <ul>
-                      <li>Internal CSS:
-                        Internal CSS is placed within the &lt;style&gt; tag in the &lt;head&gt; section of your HTML document and applies styles to multiple elements on the same page.</li>
+                      <li> Object: Represents a collection of key-value pairs, where keys are strings (or symbols) and values can be of any data type. Objects are widely used to organize and manipulate data in JavaScript, providing a flexible and powerful way to represent complex structures. </li>
+                      <li>Array: Represents an ordered list of values, accessed by index. Arrays are used to store multiple values sequentially and are commonly employed for tasks such as iterating over collections of data and performing operations on them.</li>
+                      <li>Function: Represents reusable blocks of code that can be called to perform a specific task. Functions are essential for encapsulating logic, promoting code reusability, and structuring programs in a modular fashion.</li>
                     </ul>
-                    <pre>
-                      <code class="language-html">
-                        &lt;head&gt;
-                        &lt;style&gt;
-                          p {
-                            color: red;
-                            font-size: 18px;
-                          }
-                        &lt;/style&gt;
-                      &lt;/head&gt;
-                      &lt;body&gt;
-                        &lt;p&gt;This is a red, 18px text.&lt;/p&gt;
-                        &lt;p&gt;Another red, 18px text.&lt;/p&gt;
-                      &lt;/body&gt;                      
-                      </code>
-                    </pre>
-                    <ul>
-                      <li>External CSS:
-                        External CSS is stored in a separate .css file and linked to your HTML document using the &lt;link&gt; element.</li>
-                    </ul>
-                    <pre>
-                      <code class="language-html">
-                        &lt;!-- In your HTML file (index.html) --&gt;
-                          &lt;head&gt;
-                            &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;styles.css&quot;&gt;
-                          &lt;/head&gt;
-                          &lt;body&gt;
-                         &lt;p class=&quot;blue-text&quot;&gt;This is a blue text.&lt;/p&gt;
-                         &lt;p class=&quot;blue-text&quot;&gt;Another blue text.&lt;/p&gt;
-                        &lt;/body&gt;
-                      </code>
-                    </pre>
-                    <pre>
-                      <code class="language-html">
-                        /* In your CSS file (styles.css) */
-                        .blue-text {
-                          color: blue;
-                          font-size: 16px;
-                        }
-                        </code>
-                    </pre>
-                    <div>In the above examples: <br>
-
-                      We use CSS properties like color (text color) and font-size (text size) to apply styles.
-                      We can target specific elements using element selectors (e.g., p for paragraphs) or class selectors (e.g., .blue-text).
-                      In external CSS, the CSS code is stored in a separate file (e.g., styles.css) and linked to the HTML file using the &lt;link&gt; element.
-                      Choose the method that best suits your needs and coding style. Each method has its advantages and use cases. Inline CSS is the simplest but is typically used for quick styling adjustments. Internal CSS is useful for small projects, while external CSS is great for larger websites to maintain a consistent style across multiple pages.
-                      </div>
                 </div>
               </div>
             </div>
             <div class="accordion-item">
                 <h2 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                    CSS Colors
+                    Functions in JAVASCRIPT
                   </button>
                 </h2>
                 <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                   <div class="accordion-body">
-                    <ul><li>Color Names: CSS provides named colors that you can use directly in your styles. These names are easy to remember and use:</li></ul>
-                    <pre>
-                      <code class="language-html">
-                        color: red;
-                        background-color: blue;
-                        </code>
-                    </pre>
-                    <ul><li>Hexadecimal Colors: Hexadecimal values use a six-character code starting with "#" to represent colors.</li></ul>
-                    <pre>
-                      <code class="language-html">
-                        /* Example */
-                        color: #FF5733; /* This represents a shade of orange */
-                      </code>
-                    </pre>
-                    <ul><li>RGB Colors: RGB (Red, Green, Blue) values allow you to define colors by specifying the intensity of each color component.</li></ul>
-                    <pre>
-                      <code class="language-html">
-                        /* Example */
-                        color: rgb(255, 0, 0); /* This is pure red */
-                      </code>
-                    </pre>
-                    <ul><li>RGBA Colors: RGBA is similar to RGB but includes an additional alpha component for transparency.</li></ul>
-                    <pre>
-                      <code class="language-html">
-                        /* Example */
-                        color: rgba(0, 128, 0, 0.5); /* This is semi-transparent green */
-                      </code>
-                    </pre>
-                    <ul><li>HSL Colors: HSL (Hue, Saturation, Lightness) values define colors based on their hue, saturation, and lightness.</li></ul>
-                    <pre>
-                      <code>
-                        /* Example */
-                        color: hsl(210, 100%, 50%); /* This is a vibrant shade of blue */
-                      </code>
-                    </pre>
-                    <ul><li>HSLA Colors: HSLA is similar to HSL but includes an alpha component for transparency.</li></ul>
-                    <pre>
-                      <code class="language-html">
-                        /* Example */
-                        color: hsla(60, 100%, 50%, 0.7); /* This is a semi-transparent yellow */
-                      </code>
-                    </pre>
+                    Functions are pivotal components of JavaScript, enabling developers to structure and organize their code effectively. They encapsulate reusable blocks of logic, promoting modularity and enhancing code readability and maintainability.
+<br><br>
+Declaring Functions
+When declaring a function, you specify its name and parameters (if any). Parameters act as variables inside the function, representing the values passed to it when invoked. Functions can be declared using the function keyword followed by the function name and a pair of parentheses.
+<br><br>
+Invoking Functions
+Once a function is declared, it can be invoked or called using its name followed by parentheses. Arguments can be passed to the function within these parentheses, which the function can then utilize during execution.
+<br><br>
+Function Parameters and Arguments
+Parameters are placeholders for values that a function expects to receive when called, while arguments are the actual values passed to the function during invocation. Parameters are variables local to the function, and their values are determined by the arguments passed to the function.
+<br><br>
+Function Expressions
+Function expressions involve defining a function and assigning it to a variable. They can be named or anonymous, offering flexibility in code organization and execution. Function expressions are often used when passing functions as arguments to other functions or when defining functions within conditional statements or loops.
+
+
                   </div>
                 </div>
               </div>
               <div class="accordion-item">
                 <h2 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-                    CSS Backgrounds
+                    DOM Manipulation in JavaScript
                   </button>
                 </h2>
                 <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                   <div class="accordion-body">
-                    <ul><li>Background Color: You can set the background color of an element using the background-color property.</li></ul>
-                    <pre>
-                      <code class="language-html">
-                        /* Example */
-                        background-color: lightblue;
+                    <b>Document Object Model (DOM) manipulation is a fundamental aspect of web development with JavaScript. The DOM represents the structure of an HTML document as a hierarchical tree of nodes, and JavaScript allows developers to manipulate this structure dynamically.</b> <br><br>
+                    <h2>Accessing DOM Elements</h2>
+                    <b>JavaScript provides several methods to access DOM elements, including:</b>
 
-                        /* This will set the background color of the element to light blue. */
-                      </code>
-                    </pre>
-                    <ul><li>Background Image: You can set a background image using the background-image property.</li></ul>
-                    <pre>
-                      <code class="language-html">
-                        /* Example */
-                        background-image: url('background-image.jpg');
+                    <ul>
+                        <li>getElementById: Retrieves an element by its unique ID attribute.</li>
+                        <li>getElementsByClassName: Retrieves elements by their class names.</li>
+                        <li>getElementsByTagName: Retrieves elements by their tag names.</li>
+                        <li> querySelector: Retrieves the first element that matches a specified CSS selector.</li>
+                        <li>querySelectorAll: Retrieves all elements that match a specified CSS selector.</li>
+                    </ul>
 
-                        /* This will make the background image cover the entire element. */
-                      </code>
-                    </pre>
-                    <ul><li>Background Repeat: You can control how the background image repeats using the background-repeat property.</li></ul>
-                    <pre>
-                      <code class="language-html">
-                        /* Example */
-                        background-repeat: no-repeat;
-                      </code>
-                    </pre>
-                    <ul><li>Background Position: You can set the position of the background image using the background-position property.</li></ul>
-                    <pre>
-                      <code class="language-html">
-                        /* Example */
-                        background-position: center top;
-                        /* This will position the background image in the center horizontally and at the top vertically. */
-                      </code>
-                    </pre>
-                    <ul><li>Multiple Backgrounds: You can use multiple background images on a single element.</li></ul>
-                    <pre>
-                      <code class="language-html">
-                        /* Example */
-                        background-image: url('bg1.jpg'), url('bg2.jpg');
-                        background-position: left top, right bottom;
-                        background-repeat: no-repeat, repeat-x;
+                    <h2>Modifying DOM Elements</h2>
 
-                        /* This sets two background images with different positions and repeat behaviors. */
-                        </code>
-                    </pre>
+                    <b>Once accessed, DOM elements can be modified in various ways, including:</b>
+
+                    <ul>
+                        <li>Changing Content: Modifying element text, HTML, or attributes.</li>
+                        <li>Styling Elements: Applying CSS styles to elements dynamically.</li>
+                        <li>Adding or Removing Elements: Inserting new elements into the DOM or removing existing ones.</li>
+                        <li>Event Handling: Attaching event listeners to elements to respond to user interactions.</li>
+                    </ul>
+
+                    <h2>Manipulating Element Attributes</h2>
+
+                    <b>JavaScript enables developers to manipulate element attributes using properties and methods such as:</b>
+
+                    <ul>
+                        <li>getAttribute: Retrieves the value of a specified attribute.</li>
+                        <li>setAttribute: Sets the value of a specified attribute.</li>
+                        <li>removeAttribute: Removes a specified attribute from an element.</li>
+                        <li>classList: Provides methods to manipulate the class attribute of an element, such as adding, removing, or toggling classes.</li>
+                    </ul>
+
+                    <h2>Traversing the DOM</h2>
+
+                    <b>Traversal involves navigating between different nodes in the DOM tree. Common traversal methods include:</b>
+
+                    <ul>
+                        <li>parentNode: Retrieves the parent node of an element.</li>
+                        <li>childNodes: Retrieves a collection of child nodes of an element.</li>
+                        <li>firstChild and lastChild: Retrieve the first and last child nodes of an element, respectively.</li>
+                        <li>nextSibling and previousSibling: Retrieve the next and previous sibling nodes of an element, respectively.</li>
+                    </ul>
                   </div>
                 </div>
               </div>
-              <div class="accordion-item">
+              <!-- <div class="accordion-item">
                 <h2 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
                     CSS Border
@@ -829,12 +712,12 @@
                     </ul>
                   </div>
                 </div>
-              </div>
+              </div> -->
           </div>
     </main>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
